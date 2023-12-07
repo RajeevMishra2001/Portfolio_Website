@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajeev Calculator</title>
+
+    <style>
+        .input{
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            border: 4px solid black;
+        }
+        .text-center{
+            text-align: center;
+            margin: 80px;
+            color: white;
+            background-color: black;
+            max-width: 35%;
+            margin: 70px 500px;
+        }
+        .row{
+            margin: 7px 0px;
+        }
+
+        .bg-red{
+            background-color: aqua;
+        }
+        .mx-auto{
+            margin: auto;
+        }
+        .m-w-20{
+            max-width: 23vw;
+        }
+        .button{
+            padding: 32px;
+            width: 83px;
+            border: 4px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .orange{
+            background-color: rgb(217, 217, 9);
+        }
+        .aqua{
+            background-color: rgb(10, 232, 84);
+        }
+    </style>
+</head>
+<body style="background-color: cyan;">
+    <h1 class="text-center">  Welcome to Rajeev's Calculator</h1>
+    <div class="container bg-red mx-auto m-w-20">
+        <div class="row">
+            <input class="input" type="text">
+        </div>
+        <div class="row">
+            <button class="button orange">C</button>
+            <button class="button orange">%</button>
+            <button class="button orange">M+</button>
+            <button class="button orange">M-</button>
+        </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button orange">*</button>
+        </div>
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button orange">-</button>
+        </div>
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button orange">+</button>
+        </div>
+        <div class="row">
+            <button class="button">00</button>
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button aqua">=</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        let string = "";
+        let buttons = document.querySelectorAll(".button");
+        Array.from(buttons).forEach((button) => {
+            button.addEventListener("click", (e)=>{
+                if(e.target.innerHTML == "="){
+                    string = eval(string);
+                    document.querySelector("input").value = string;
+                }
+                else if(e.target.innerHTML == "C"){
+                    string = "";
+                    document.querySelector("input").value = string;
+                }
+                else{
+                console.log(e.target)
+                string = string + e.target.innerHTML;
+                document.querySelector("input").value = string;
+                }
+            })
+        })
+    </script>
+
+    
+</body>
+</html>

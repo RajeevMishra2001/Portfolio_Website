@@ -1,0 +1,165 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Rajeev Spotify</title>
+
+    <style>
+        .outer {
+            border: 10px solid black;
+            border-radius: 20px;
+            height: 99%;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg, rgb(25, 25, 26) 0%, rgb(121, 138, 143) 35%, rgb(60, 64, 65) 100%);
+        }
+
+        .inner {
+            width: 30%;
+            height: 98%;
+            border: 10px solid rgb(13, 13, 14);
+            background-color: white;
+            border-radius: 15px;
+         
+        }
+
+        .song {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .font img {
+            width: 70%;
+            height: 43%;
+            margin-left: 66px;
+            margin-top: 5px;
+            border: 10px solid black;
+            border-radius: 50%;
+        }
+
+        .music{
+            margin-left: 10px;
+        }
+
+        .range{
+            width: 90%;
+            margin: 40px 0px 0px 20px;
+            
+        }
+        .range1{
+            width: 60%;
+            
+        }
+        .arrow {
+            display: flex;
+            margin-top: -60px;
+        }   
+        
+        .play{
+            margin: 30px 0px 0px 180px;
+            font-size: 30px;
+        }
+
+        .play0{
+            margin: 60px 0px 0px 120px;
+            
+        }
+
+        .play1{
+            margin: 60px 0px 0px 30px;
+        }
+
+        .play2{
+            margin: 60px 0px 0px 30px;
+        }
+
+        .volume{
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .vol{
+            margin: 10px 10px 0px 70px;
+        }
+
+        .audio{
+            margin: 30px 70px;
+        }
+
+        source{
+            width: 100%;
+        }
+
+        #range{
+            -webkit-appearance: none;
+            height: 6px;
+            width: 60%;
+            cursor: pointer;
+            margin-top: 10px;
+            background-color: rgb(18, 18, 234);
+        }
+
+        #range::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            height: 19px;
+            width: 19px;
+            cursor: pointer;
+            background-color: black;
+            border-radius: 50%;
+            border: 2px solid rgb(36, 181, 23);
+        }
+
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="outer">
+                <div class="inner">
+                    <div class="font">
+                        <h2 class="music"> <i class="fa-solid fa-guitar fa-beat fa-2xl"></i>Music</h2>
+                        <h1 class="song">Bom diggy bom bom</h1>
+                        <img src="music.jpg" alt="">
+
+                        
+                        <div class="audio">
+                            <audio controls id="song">
+                                <source src="sSongs/Bom diggy.mp3" >
+                            </audio>
+                        </div>
+                        
+
+                        <h1 class="play">Play</h1>
+
+                        <div class="volume">
+                            <h1 class="vol"><i class="fa-solid fa-volume-high fa-lg"></i></h1>
+                            <input type="range" id="range">
+                        </div>
+
+
+                        <div class="lg" style=" margin-top: 45px; display: flex; justify-content: space-around;" >
+                            <h1><i class="fa-solid fa-microphone-slash fa-lg" style="margin-right: 280px;"></i></h1>
+                            <h1><i class="fa-brands fa-playstation fa-xl"></i></h1>
+
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/945aa37501.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

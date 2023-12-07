@@ -1,0 +1,790 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background : transparent;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    z-index: 100;
+    position: sticky;
+}
+
+.header a{
+    transform: 2s;
+    opacity: 0;
+    animation: slideTop 2s ease forwards;
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.logo{
+    position: relative;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 7px;
+    left: -100px;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideRight 2S ease forwards;
+    padding: 10px;
+
+}
+
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.navbar a:hover{
+    font-size: 26px;
+    text-decoration: none;
+    color: black ;
+    padding: 10px;
+    background-color: cyan;
+    box-shadow: 0 0 5px #0ef , 
+    0 0 25px #0ef , 0 0 50px #0ef , 
+    0 0 100px #0ef , 0 0 200px #0ef;
+    border: 1px solid white;
+}
+
+.line{
+    margin-top: 15px;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    justify-content: space-around;
+    background-size: cover;
+    background-position: center;
+    padding: 6% 6% 0 ;
+    display: flex;
+}
+
+.home-content{
+    
+    transition: 2s;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+}
+
+.image img{
+    width: 100%;
+    height: 60%;
+    border: 3px solid white;
+    border-radius: 10px ;
+    margin-top: 30px;
+    transition: 2s;
+    opacity: 0;
+    animation: slideBottom 2s ease forwards;
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.home-content h1{
+    font-size: 50px;
+    margin: 10px 0px 30px 0px;
+    color: #0ef;
+}
+
+.home-content p{
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.aqua{
+    color: rgb(20, 219, 233);
+}
+
+.green{
+    color: rgb(75, 254, 10);
+}
+
+.home-account{
+    margin-top: 50px;
+}
+
+.home-account a{
+
+    padding: 30px 35px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.about-me{
+    margin: 80px 0px 70px 50px;
+}
+
+.btn-box{
+    text-decoration: none;
+    color: black ;
+    font-size: 28px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: cyan;
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan , 0 0 50px cyan ,
+    0 0 100px cyan , 0 0 200px cyan;
+}
+
+
+.container{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.right-image img{
+    margin-top: 55%;
+    margin-left: 50px;
+    width: 86%;
+    height: 50%;
+    border: 6px solid black;
+    border-radius: 20px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideRight .8s ease forwards;
+}
+
+#About-me{
+    margin-top: 10%;
+    width: 40%;
+    opacity: 0;
+    transition: .3s;
+    animation: slideTop .8s ease forwards;
+    
+
+}
+
+#About-me h1{
+    margin-top: 2%;
+    font-size: 4rem;
+
+}
+#About-me h2{
+    margin-top: 2%;
+    font-size: 2rem;
+
+}
+
+#About-me p{
+    margin-top: 3%;
+    color: white;
+    font-size:larger;
+    font-weight: 600;
+
+}
+
+.height{
+    height: 100vh;
+}
+
+.my-services{
+    color: white;
+    display: flex;
+    height: 58vh;
+   
+}
+
+.services{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-left: 20px;
+    padding: 50px;
+    background: url(background.jpg);
+
+}
+
+.web{
+    padding: 40px;
+    border: 3px solid cyan;
+    border-radius: 25px ;
+    width: 30%;
+    margin-left :40px;
+    margin-bottom: 50px;
+    box-shadow: 1px 1px 20px aqua;
+    color: white;
+    background-color: black;
+}
+
+
+
+.web h1{
+    font-size: 40px;
+    color: rgb(51, 15, 230);
+}
+
+.web p{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.web a{
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: aqua;
+    font-weight: 600;
+    box-shadow: 0 0 5px aqua , 
+    0 0 25px #0ef;
+}
+
+.web button:hover{
+    box-shadow: 0 0 5px aqua,
+    0 0 25px aqua, 0 0 50px aqua, 
+    0 0 100px aqua , 0 0 200px  aqua;
+    background-color: cyan;
+    font-size: 13.5px;
+}
+
+.my-services div:hover{
+    transform: translateY(-10px);
+    background-color: rgb(255, 252, 252);
+    color: black;
+}
+
+.contain{
+    background-color: black;
+    height: 70%;
+    margin-top: -50px;
+    
+}
+
+.contain h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+
+}
+
+.bar a{
+    text-decoration: none;
+}
+
+
+.technical{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info i {
+    margin-left: 150px;
+   margin-top: 50px;
+}
+
+.info span{
+    margin-left: 50px;
+    border: 3px solid cyan;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px aqua;
+}
+
+.info span:hover{
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 5px aqua , 
+    0 0 25px aqua , 0 0 50px aqua,
+    0 0 100px aqua , 0 0 200px aqua;
+    
+}
+
+.CSS{
+    margin-left: -20px;
+}
+
+.project{
+    display: flex;
+    height: 70%;
+}
+
+.project-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+
+
+.project h1{
+    color: rgb(21, 222, 21);
+    margin-bottom: 20px;
+
+}
+
+.project1:hover{
+    background-color: black;
+    box-shadow: 0 0 5px white ,
+    0 0 25px white , 0 0  50px white ; 
+}
+.project2:hover{
+    background-color: black;
+    box-shadow: 0 0 5px white ,
+    0 0 25px white , 0 0  50px white ; 
+}
+.project3:hover{
+    background-color: black;
+    box-shadow: 0 0 5px white ,
+    0 0 25px white , 0 0  50px white ; 
+}
+
+.project1{
+    width: 30%;
+    height: 70%;
+    padding: 30px 30px;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+   
+}
+
+
+.project2{
+    width: 30%;
+    height: 70%;
+    padding: 30px 30px;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.project3{
+    width: 30%;
+    height: 70%;
+    padding: 30px 30px;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.quant{
+    height: 70%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.contact{
+    width: 50%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+.contact-me h1{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mail{
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+.mail i{
+   margin-left: -20pc;
+}
+
+.mail h3{
+    margin-left: 70px;
+    margin-top: -10px;
+}
+
+.contact-no{
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+.contact-no h3{
+    margin-left: 10px ;
+    margin-top: -10px;
+}
+
+.contact-no i{
+    margin-left: -20pc ;
+}
+
+.cv{
+    margin-top: 50px;
+}
+
+.cv a{
+    margin-top: 100px;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: cyan;
+    color: black;
+    box-shadow: 1px 1px 25px aqua;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+.cv a:hover{
+    box-shadow: 0 0 5px aqua , 
+    0 0 25px aqua, 0 0 50px aqua,
+    0 0 100px aqua , 0 0 200px aqua ;
+    cursor: pointer;
+    background-color: cyan;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin-left: -20px;
+    margin-top: 50px;
+}
+
+#name{
+    
+    height: 50px;
+    width: 80%;
+    background-color: black;
+    color: white;
+   
+}
+
+#mail{
+    margin: 20px -10px;
+    height: 50px;
+    width: 80%;
+    background-color: black;
+    color: white;
+}
+
+#message{
+    margin: 10px -10px;
+    width: 80%;
+    background-color: black;
+    color: white;
+    
+}
+
+.submit{
+    font-size: 1.8rem;
+    background-color: blue;
+    box-shadow: 1px 1px 25px blue;
+    border-radius: 20px;
+    border: 3px solid white;
+    padding: 15px;
+    color: white;
+    margin-top:20px;
+    width: 20%;
+   
+}
+
+.submit:hover{
+    box-shadow: 0 0 5px blue , 
+    0 0 25px blue, 0 0 50px blue,
+    0 0 100px blue , 0 0 200px blue ;
+    cursor: pointer;
+    background-color: blue;
+}
+
+.copy-height{
+    background-color: rgb(57, 52, 52); 
+    color: white;
+    
+    text-align: center; 
+     font-size: 1.2rem; 
+}
+
+.project1 button{
+    padding: .8rem;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: cyan;
+    color: white;
+    margin-top: 20px;
+    
+}
+
+.project1 button a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.project2 button{
+    padding: .8rem;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: cyan;
+    color: white;
+    margin-top: 20px;
+    
+}
+
+.project2 button a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.project3 button{
+    padding: .8rem;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: cyan;
+    color: white;
+    margin-top: 20px;
+    
+}
+
+.project3 button a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.copy-height{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width:420px){
+    .header .logo{
+        display: none;
+    }
+
+    .navbar a{
+        font-size: 15px;
+        padding: 5px;
+    
+    }
+    .navbar a:hover{
+        font-size: 12px
+    
+    }
+    
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .image{
+        display: none;
+        margin-top: 200px;
+    }
+
+    .whatsapp{
+       display: none;
+    }
+
+    .container{
+        margin-top: -10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:220%;
+        width: 100%;
+    }
+
+    .height{
+        height: 250%;
+    }
+
+    .my-services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 110%;
+        margin-top: -140px;
+    }
+
+    .web{
+        width: 80%;
+        height: 25%;
+    }
+
+    .contain{
+        height: 150%;
+        margin-top:5px;
+    }
+
+    .technical{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .bar{
+        margin-top: 50px;
+    }
+
+    .active{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-margin{
+        height: 150%;
+    }
+
+    .project{
+         display: flex;
+         flex-direction: column;
+         height: 180%;
+         justify-content: center;
+         align-items: center;
+    }
+
+    .project1{
+        width: 80%;
+        height: 100%;
+    }
+
+    .project2{
+        width: 80%;
+        height: 100%;
+    }
+
+    .project3{
+        width: 80%;
+        height: 100%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .quant{
+        height: 140%;
+    }
+    
+    .mail h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #name  {
+        width: 150% ;
+    }
+
+    #mail  {
+        width: 150% ;
+    }
+
+    #message {
+        width: 150% ;
+    }
+
+    .submit{
+        width: 80%;
+    }
+
+    .copy-height{
+        margin-top: -130px;
+        display: flex;
+        height: 35%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #About-me p{
+        width: 100%;
+        font: 100 1.2rem white;
+        word-spacing: 2px;
+    }
+
+}
+
